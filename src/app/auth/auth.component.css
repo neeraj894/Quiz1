@@ -1,0 +1,11 @@
+.auth_page{
+ margin: 1.8em 4em 1em 2em;
+}
+.form-group{
+ margin-bottom: 1em;
+}
+.link_external{
+ color: blue;
+ text-decoration: underline;
+ cursor: pointer;
+}

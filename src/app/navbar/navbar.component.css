@@ -1,0 +1,22 @@
+.wrapper > div {
+  display: grid;
+  grid-template-rows: 15% 85%;
+  grid-row-gap: 1em;
+}
+.navbar-div {
+  top: 0;
+  width: 100%;
+}
+.main-div {
+  margin-top: 6em;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 1em;
+  z-index: 1000;
+}
+.btn{
+ margin:0.4em
+}

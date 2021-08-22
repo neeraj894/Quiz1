@@ -1,0 +1,44 @@
+.wrapper > div {
+  display: grid;
+  grid-template-rows: 5% 85%;
+  grid-row-gap: 1em;
+}
+.navbar-div {
+  top: 0;
+  width: 100%;
+}
+.main-div {
+  margin-top: 6em;
+}
+.user_name {
+  text-align: center;
+  height: 2em;
+}
+
+.card {
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid lightgray;
+  overflow: hidden;
+}
+
+.card_options {
+  display: flex;
+  align-items: center;
+}
+.radio_buttons {
+  margin: 0.1em 0.3em 0 0;
+  width: 1.2em;
+  height: 1.2em;
+  cursor: pointer;
+}
+.card_group {
+  /* z-index: 1; */
+  overflow: hidden;
+}
+.is-correct {
+  color: rgb(64, 238, 64);
+}
+.is-wrong {
+  color: crimson;
+}

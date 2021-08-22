@@ -1,0 +1,325 @@
+<div class="wrapper">
+  <div class="navbar-div">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="main-div">
+    <h1 class="user_name">Welcome, {{ name }}</h1>
+    <form #submitForm="ngForm">
+      <div
+        [class]="
+          submittedForm ? (applyPassFailClass[0] ? passClass : failClass) : null
+        "
+        formGroupName="Question1"
+        class="card_group"
+      >
+        <div class="card">
+          <h3>{{ quizData[0].question }}</h3>
+          <p class="card_options">
+            <input
+              class="radio_buttons"
+              type="radio"
+              #Question1="ngModel"
+              [value]="quizData[0].option1"
+              name="Question1"
+              [(ngModel)]="Quest1.option1"
+            />
+            1.
+            {{ quizData[0].option1 }}
+          </p>
+          <p class="card_options">
+            <input
+              #Question1="ngModel"
+              class="radio_buttons"
+              type="radio"
+              [value]="quizData[0].option2"
+              name="Question1"
+              [(ngModel)]="Quest1.option2"
+            />2.
+            {{ quizData[0].option2 }}
+          </p>
+          <p class="card_options">
+            <input
+              #Question1="ngModel"
+              class="radio_buttons"
+              type="radio"
+              [value]="quizData[0].option3"
+              name="Question1"
+              [(ngModel)]="Quest1.option3"
+            />3.
+            {{ quizData[0].option3 }}
+          </p>
+          <p class="card_options">
+            <input
+              #Question1="ngModel"
+              class="radio_buttons"
+              type="radio"
+              [value]="quizData[0].option4"
+              name="Question1"
+              [(ngModel)]="Quest1.option4"
+            />4.
+            {{ quizData[0].option4 }}
+          </p>
+          <h4 *ngIf="showTotalScore">
+            Correct Answer is: {{ quizData[0].correct }}
+          </h4>
+        </div>
+      </div>
+      <div
+        [class]="
+          submittedForm ? (applyPassFailClass[1] ? passClass : failClass) : null
+        "
+        formGroupName="Question2"
+        class="card_group"
+      >
+        <div class="card">
+          <h3>{{ quizData[1].question }}</h3>
+          <p class="card_options">
+            <input
+              class="radio_buttons"
+              type="radio"
+              #Question2="ngModel"
+              [value]="quizData[1].option1"
+              name="Question2"
+              [(ngModel)]="Quest2.option1"
+            />
+            1.
+            {{ quizData[1].option1 }}
+          </p>
+          <p class="card_options">
+            <input
+              #Question2="ngModel"
+              class="radio_buttons"
+              type="radio"
+              [value]="quizData[1].option2"
+              name="Question2"
+              [(ngModel)]="Quest2.option2"
+            />2.
+            {{ quizData[1].option2 }}
+          </p>
+          <p class="card_options">
+            <input
+              #Question2="ngModel"
+              class="radio_buttons"
+              type="radio"
+              [value]="quizData[1].option3"
+              name="Question2"
+              [(ngModel)]="Quest2.option3"
+            />3.
+            {{ quizData[1].option3 }}
+          </p>
+          <p class="card_options">
+            <input
+              #Question2="ngModel"
+              class="radio_buttons"
+              type="radio"
+              [value]="quizData[1].option4"
+              name="Question2"
+              [(ngModel)]="Quest2.option4"
+            />4.
+            {{ quizData[1].option4 }}
+          </p>
+          <h4 *ngIf="showTotalScore">
+            Correct Answer is: {{ quizData[1].correct }}
+          </h4>
+        </div>
+      </div>
+      <div
+        [class]="
+          submittedForm ? (applyPassFailClass[2] ? passClass : failClass) : null
+        "
+        formGroupName="Question3"
+        class="card_group"
+      >
+        <div class="card">
+          <h3>{{ quizData[2].question }}</h3>
+          <p class="card_options">
+            <input
+              class="radio_buttons"
+              type="radio"
+              #Question3="ngModel"
+              [value]="quizData[2].option1"
+              name="Question3"
+              [(ngModel)]="Quest3.option1"
+            />
+            1.
+            {{ quizData[2].option1 }}
+          </p>
+          <p class="card_options">
+            <input
+              #Question3="ngModel"
+              class="radio_buttons"
+              type="radio"
+              [value]="quizData[2].option2"
+              name="Question3"
+              [(ngModel)]="Quest3.option2"
+            />2.
+            {{ quizData[2].option2 }}
+          </p>
+          <p class="card_options">
+            <input
+              #Question3="ngModel"
+              class="radio_buttons"
+              type="radio"
+              [value]="quizData[2].option3"
+              name="Question3"
+              [(ngModel)]="Quest3.option3"
+            />3.
+            {{ quizData[2].option3 }}
+          </p>
+          <p class="card_options">
+            <input
+              #Question3="ngModel"
+              class="radio_buttons"
+              type="radio"
+              [value]="quizData[2].option4"
+              name="Question3"
+              [(ngModel)]="Quest3.option4"
+            />4.
+            {{ quizData[2].option4 }}
+          </p>
+          <h4 *ngIf="showTotalScore">
+            Correct Answer is: {{ quizData[2].correct }}
+          </h4>
+        </div>
+      </div>
+      <div
+        [class]="
+          submittedForm ? (applyPassFailClass[3] ? passClass : failClass) : null
+        "
+        formGroupName="Question4"
+        class="card_group"
+      >
+        <div class="card">
+          <h3>{{ quizData[3].question }}</h3>
+          <p class="card_options">
+            <input
+              class="radio_buttons"
+              type="radio"
+              #Question4="ngModel"
+              [value]="quizData[3].option1"
+              name="Question4"
+              [(ngModel)]="Quest4.option1"
+            />
+            1.
+            {{ quizData[3].option1 }}
+          </p>
+          <p class="card_options">
+            <input
+              #Question4="ngModel"
+              class="radio_buttons"
+              type="radio"
+              [value]="quizData[3].option2"
+              name="Question4"
+              [(ngModel)]="Quest4.option2"
+            />2.
+            {{ quizData[3].option2 }}
+          </p>
+          <p class="card_options">
+            <input
+              #Question4="ngModel"
+              class="radio_buttons"
+              type="radio"
+              [value]="quizData[3].option3"
+              name="Question4"
+              [(ngModel)]="Quest4.option3"
+            />3.
+            {{ quizData[3].option3 }}
+          </p>
+          <p class="card_options">
+            <input
+              #Question4="ngModel"
+              class="radio_buttons"
+              type="radio"
+              [value]="quizData[3].option4"
+              name="Question4"
+              [(ngModel)]="Quest4.option4"
+            />4.
+            {{ quizData[3].option4 }}
+          </p>
+          <h4 *ngIf="showTotalScore">
+            Correct Answer is: {{ quizData[3].correct }}
+          </h4>
+        </div>
+      </div>
+      <div
+        [class]="
+          submittedForm ? (applyPassFailClass[4] ? passClass : failClass) : null
+        "
+        formGroupName="Question5"
+        class="card_group"
+      >
+        <div class="card">
+          <h3>{{ quizData[4].question }}</h3>
+          <p class="card_options">
+            <input
+              class="radio_buttons"
+              type="radio"
+              #Question5="ngModel"
+              [value]="quizData[4].option1"
+              name="Question5"
+              [(ngModel)]="Quest5.option1"
+            />
+            1.
+            {{ quizData[4].option1 }}
+          </p>
+          <p class="card_options">
+            <input
+              #Question5="ngModel"
+              class="radio_buttons"
+              type="radio"
+              [value]="quizData[4].option2"
+              name="Question5"
+              [(ngModel)]="Quest5.option2"
+            />2.
+            {{ quizData[4].option2 }}
+          </p>
+          <p class="card_options">
+            <input
+              #Question5="ngModel"
+              class="radio_buttons"
+              type="radio"
+              [value]="quizData[4].option3"
+              name="Question5"
+              [(ngModel)]="Quest5.option3"
+            />3.
+            {{ quizData[4].option3 }}
+          </p>
+          <p class="card_options">
+            <input
+              #Question5="ngModel"
+              class="radio_buttons"
+              type="radio"
+              [value]="quizData[4].option4"
+              name="Question5"
+              [(ngModel)]="Quest5.option4"
+            />4.
+            {{ quizData[4].option4 }}
+          </p>
+          <h4 *ngIf="showTotalScore">
+            Correct Answer is: {{ quizData[4].correct }}
+          </h4>
+        </div>
+      </div>
+      <div *ngIf="showTotalScore">
+        <h3 style="margin: 1.5em">Your total score is: {{ totalScore }}/5</h3>
+      </div>
+      <button
+        style="margin: 1.5rem"
+        (click)="onSubmit(submitForm)"
+        class="btn btn-primary"
+        type="submit"
+        *ngIf="!showTotalScore"
+      >
+        Submit
+      </button>
+      <button
+        *ngIf="showTotalScore"
+        style="margin: 1.5rem"
+        routerLink=""
+        class="btn btn-danger"
+      >
+        Logout & Exit
+      </button>
+    </form>
+  </div>
+</div>

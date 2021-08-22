@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "question": "What is the Capital of India?",
+    "option1": "New Delhi",
+    "option2": "Mumbai",
+    "option3": "Jaipur",
+    "option4": "Bengaluru",
+    "correct": "New Delhi"
+  },
+  {
+    "id": 2,
+    "question": "Who won gold medal in Olympics 2021?",
+    "option1": "Sachin Tendulakar",
+    "option2": "Saina Mirza",
+    "option3": "Neeraj Chopra",
+    "option4": "Virat Kohli",
+    "correct": "Neeraj Chopra"
+  },
+  {
+    "id": 3,
+    "question": "Who invented the Light Bulb?",
+    "option1": "Albert Einstein",
+    "option2": "Thomas Alva Edison",
+    "option3": "Issac Newton",
+    "option4": "William Shakespeare",
+    "correct": "Thomas Alva Edison"
+  },
+  {
+    "id": 4,
+    "question": "Which planet in our solar system is known as the Red Planet?",
+    "option1": "Mars",
+    "option2": "Earth",
+    "option3": "Jupiter",
+    "option4": "Saturn",
+    "correct": "Mars"
+  },
+  {
+    "id": 5,
+    "question": "How many hours are there in a day?",
+    "option1": "12 hours",
+    "option2": "24 hours",
+    "option3": "48 hours",
+    "option4": "6 hours",
+    "correct": "24 hours"
+  }
+]
